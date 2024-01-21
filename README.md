@@ -17,9 +17,6 @@ This project demonstrates the testing of Spotify APIs using the Rest-assured fra
 - Follow & Unfollow artists.
 - applied positive and negative scenarios.
   
-### Allure Report
-[SpotifyAPI Testcases Report](https://shroukk.github.io/SpotifyAPI/index.html)
-
 ### Renew tokens
 - Renew tokens with valid & invalid data
 
@@ -28,6 +25,9 @@ This project demonstrates the testing of Spotify APIs using the Rest-assured fra
 - Validate returned values in the response body.
 - Ensure proper handling of errors.
   
+### Allure Report
+[SpotifyAPI Testcases Report](https://shroukk.github.io/SpotifyAPI/index.html)
+
 ## Prerequisites
 - JDK 21
 - Maven
@@ -36,13 +36,16 @@ This project demonstrates the testing of Spotify APIs using the Rest-assured fra
 - request an access token by implementing Authorization code flow
   
 ## Applied Technologies
-- Rest-assured framework
-- TestNG
-- Lombok lib
-- Allure report
-- Data driven
+- Rest-assured framework.
+- TestNG.
+- Lombok lib.
+- Allure report.
+- Data driven with using json and properties files.
+- POJO classes.
+- assertions using hamcrest lib.
   
 ## Installation 
 - clone the git repository.
 - run command line "mvn clean test".
+- to generate report "mvn allure:report"
 
