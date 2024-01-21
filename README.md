@@ -16,7 +16,7 @@ This project demonstrates the testing of Spotify APIs using the Rest-assured fra
 - Follow & Unfollow a playlist.
 - Follow & Unfollow artists.
 - applied positive and negative scenarios.
-- 
+  
 ### Renew tokens
 - Renew tokens with valid & invalid data
 
