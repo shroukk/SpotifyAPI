@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SpotifyAPISuite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg" />
+    </listeners>
+    <test name="SpotifyAPIsTests">
+        <classes>
+            <class name="tests.T01_RenewTokenTests" />
+            <class name="tests.T02_PlaylistTests" />
+            <class name="tests.T03_UserTests" />
+        </classes>
+    </test>
+</suite>
