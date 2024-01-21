@@ -4,7 +4,7 @@ Testing Spotify APIs using Rest-assured framework based on Spotify documentation
 ## Overview
 This project demonstrates the testing of Spotify APIs using the Rest-assured framework. The focus is on positive and negative scenarios, covering various endpoints defined in the Spotify API documentation.
 
-# Tested Features:
+# Testable Features:
 ### Playlist
 - Playlist creation, retrieval, and updating.
 - Retrieving user playlists.
@@ -17,6 +17,9 @@ This project demonstrates the testing of Spotify APIs using the Rest-assured fra
 - Follow & Unfollow artists.
 - applied positive and negative scenarios.
   
+### Allure Report
+[SpotifyAPI Testcases Report](https://shroukk.github.io/SpotifyAPI/index.html)
+
 ### Renew tokens
 - Renew tokens with valid & invalid data
 
