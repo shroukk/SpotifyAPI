@@ -17,7 +17,6 @@
         <allure.cmd.download.url>
             https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
         </allure.cmd.download.url>
-<!--        <aspectj.version>1.9.21</aspectj.version>-->
     </properties>
 
 
@@ -43,9 +42,7 @@
                                 <value>${project.build.directory}\allure-results</value>
                             </property>
                         </systemProperties>
-<!--                        <argLine>-->
-<!--                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
-<!--                        </argLine>-->
+
                         <argLine>--enable-preview</argLine>
                         <parallel>none</parallel>
 
@@ -61,11 +58,6 @@
                             <artifactId>slf4j-log4j12</artifactId>
                             <version>1.7.5</version>
                         </dependency>
-<!--                        <dependency>-->
-<!--                            <groupId>org.aspectj</groupId>-->
-<!--                            <artifactId>aspectjweaver</artifactId>-->
-<!--                            <version>${aspectj.version}</version>-->
-<!--                        </dependency>-->
                     </dependencies>
 
                 </plugin>
