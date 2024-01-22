@@ -1,5 +1,5 @@
 # Spotify API Tests
-Testing Spotify APIs using Rest-assured framework based on Spotify documentation https://developer.spotify.com/documentation/web-api
+Testing Spotify APIs using Rest-assured library based on Spotify documentation https://developer.spotify.com/documentation/web-api
 
 ## Overview
 This project demonstrates the testing of Spotify APIs using the Rest-assured framework. The focus is on positive and negative scenarios, covering various endpoints defined in the Spotify API documentation.
@@ -36,7 +36,7 @@ This project demonstrates the testing of Spotify APIs using the Rest-assured fra
 - request an access token by implementing Authorization code flow
   
 ## Applied Technologies
-- Rest-assured framework.
+- Rest-assured.
 - TestNG.
 - Lombok lib.
 - Allure report.
