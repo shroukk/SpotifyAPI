@@ -2,20 +2,22 @@ package utilities;
 import java.util.Random;
 
 public class FakerUtils {
-    public static String generateName(){
-        return "Playlist" + generateRandomDigit();
-    }
-
-    public static String generateDescription(){
-        return "Testing a playlist " + generateRandomDigit();
-    }
 
     private static int generateRandomDigit() {
         Random random = new Random();
         return random.nextInt(10); // Generates a random digit between 0 and 9
     }
+    public static String generateName(){
+        return "Playlist" + generateRandomDigit();
+    }
+
+    public static String generateDescription(){
+        return "Testing a playlist" + generateRandomDigit();
+    }
+
+
     public static String generateRandomString(int length) {
-        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_@./#&+-";
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         StringBuilder randomString = new StringBuilder(length);
         Random random = new Random();
 

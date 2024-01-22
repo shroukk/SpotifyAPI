@@ -61,7 +61,7 @@ public class T03_UserTests {
     @Severity(SeverityLevel.NORMAL)
     @Test(priority = 5, description = "should not be able to unfollow non existing playlist")
     public void TestToUnfollowPlaylistWithInvalidId(){
-        Response response = UserAPI.delete(generateRandomString(20));
+        Response response = UserAPI.delete(generateRandomString(21));
         assertError(response.as(Error.class), StatusCode.CODE_404);
     }
 

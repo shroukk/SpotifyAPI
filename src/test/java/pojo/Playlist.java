@@ -11,6 +11,8 @@ import lombok.extern.jackson.Jacksonized;
 import java.util.List;
 
 @Value
+@Getter
+@Setter
 @Jacksonized
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)

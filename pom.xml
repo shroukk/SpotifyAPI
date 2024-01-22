@@ -12,11 +12,12 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <allure.maven.version>2.11.0</allure.maven.version>
-        <allure.version>2.21.0</allure.version>
+        <allure.maven.version>2.12.0</allure.maven.version>
+        <allure.version>2.25.0</allure.version>
         <allure.cmd.download.url>
             https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
         </allure.cmd.download.url>
+<!--        <aspectj.version>1.9.21</aspectj.version>-->
     </properties>
 
 
@@ -31,16 +32,20 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>testng.xml</suiteXmlFile>
                         </suiteXmlFiles>
+
                         <systemPropertyVariables>
-                            <allure.results.directory>${project.build.directory}/allure-results
+                            <allure.results.directory>${project.build.directory}\allure-results
                             </allure.results.directory>
                         </systemPropertyVariables>
                         <systemProperties>
                             <property>
                                 <name>allure.results.directory</name>
-                                <value>${project.build.directory}/allure-results</value>
+                                <value>${project.build.directory}\allure-results</value>
                             </property>
                         </systemProperties>
+<!--                        <argLine>-->
+<!--                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+<!--                        </argLine>-->
                         <argLine>--enable-preview</argLine>
                         <parallel>none</parallel>
 
@@ -56,7 +61,13 @@
                             <artifactId>slf4j-log4j12</artifactId>
                             <version>1.7.5</version>
                         </dependency>
+<!--                        <dependency>-->
+<!--                            <groupId>org.aspectj</groupId>-->
+<!--                            <artifactId>aspectjweaver</artifactId>-->
+<!--                            <version>${aspectj.version}</version>-->
+<!--                        </dependency>-->
                     </dependencies>
+
                 </plugin>
                 <plugin>
                     <groupId>io.qameta.allure</groupId>
@@ -80,7 +91,7 @@
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>2.11.2</version>
+                <version>${allure.maven.version}</version>
             </plugin>
         </plugins>
     </build>
@@ -102,12 +113,12 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-rest-assured</artifactId>
-            <version>2.25.0</version>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-rest-assured</artifactId>-->
+<!--            <version>2.25.0</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
